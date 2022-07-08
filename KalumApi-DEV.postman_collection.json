@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "342d6f69-c052-4a8d-857c-3a7651c13bab",
+		"name": "KalumApi-DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5170147"
+	},
+	"item": [
+		{
+			"name": "Autenticacion de usuarios",
+			"item": [
+				{
+					"name": "01 - Crear cuenta de usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"dcordero@kalum.edu.gt\",\r\n    \"password\" : \"Inicio.2021\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/cuentas/registrar",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"cuentas",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Crear token por usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"pcermeno@kalum.edu.gt\",\r\n    \"password\" : \"Inicio.2021\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urllocal}}/cuentas/login",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"cuentas",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clases",
+			"item": [
+				{
+					"name": "01 - Consulta de clases",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBjZXJtZW5vQGthbHVtLmVkdS5ndCIsIm5hbWUiOiJFZHdpbiBUdW1heCIsImV4cCI6MTY2ODg5NTE3OH0.axcwc4-2CjbdmkxpDyZf_q45Gs1nJRAzNVL5FEUvPLU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urllocal}}/clases",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"clases"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CarrerasTecnicas",
+			"item": [
+				{
+					"name": "01 - Carreras técnicas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBjZXJtZW5vQGthbHVtLmVkdS5ndCIsIm5hbWUiOiJFZHdpbiBUdW1heCIsImV4cCI6MTY2ODk2MTA0NX0.z4Mv73kAOVgErytgLwjTG4dU_0vHEDIHL_wgc86gsN8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urllocal}}/CarrerasTecnicas",
+							"host": [
+								"{{urllocal}}"
+							],
+							"path": [
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
