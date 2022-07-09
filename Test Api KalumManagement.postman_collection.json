@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "642a4c53-3ac2-4cf6-a84f-62580cc8852a",
+		"_postman_id": "c964858c-eb75-44d4-9a3d-f33b5e7bd7c1",
 		"name": "Test Api KalumManagement",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "5170147"
+		"_exporter_id": "21873966"
 	},
 	"item": [
 		{
@@ -545,7 +545,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Apellidos\": \"Cermeño\",\r\n    \"Nombres\": \"Pablo\",\r\n    \"Direccion\": \"Guatemala, Guatemala\",\r\n    \"Telefono\": \"31131233\",\r\n    \"Email\": \"pablo@correo.com\"\r\n}",
+							"raw": "{\r\n    \"Apellidos\": \"Lopez\",\r\n    \"Nombres\": \"Juan\",\r\n    \"Direccion\": \"Guatemala, Guatemala\",\r\n    \"Telefono\": \"31131233\",\r\n    \"Email\": \"pablo@correo.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
